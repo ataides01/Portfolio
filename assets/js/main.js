@@ -27,13 +27,13 @@
         if (e.key === 'Escape') setOpen(false);
     });
 
-    // Validação leve no cliente (o PHP valida de novo)
+    // Validação leve no cliente (PHP ou Formspree validam no servidor)
     var form = document.querySelector('.contact-form');
     if (form) {
         form.addEventListener('submit', function (e) {
-            var nome = form.querySelector('#nome');
-            var email = form.querySelector('#email');
-            var msg = form.querySelector('#mensagem');
+            var nome = form.querySelector('#nome') || form.querySelector('#nome-gh');
+            var email = form.querySelector('#email') || form.querySelector('#email-gh');
+            var msg = form.querySelector('#mensagem') || form.querySelector('#mensagem-gh');
             if (!nome || !email || !msg) return;
 
             var valid = nome.value.trim() && email.value.trim() && msg.value.trim();
@@ -42,5 +42,14 @@
                 msg.focus();
             }
         });
+    }
+
+    // GitHub Pages + Formspree: volta com ?enviado=1
+    if (new URLSearchParams(window.location.search).get('enviado') === '1') {
+        var thanks = document.getElementById('form-thanks');
+        if (thanks) {
+            thanks.hidden = false;
+            thanks.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
     }
 })();
