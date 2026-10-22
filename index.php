@@ -82,28 +82,49 @@ $contactStatus = $_GET['contato'] ?? '';
 
         <section class="section section-alt" id="portfolio">
             <div class="container">
-                <h2 class="section-title">Projetos exemplo</h2>
-                <p class="section-intro">Cards fictícios — troque por prints e links reais quando tiver portfólio.</p>
+                <h2 class="section-title">Projetos e trabalhos</h2>
+                <p class="section-intro">Conheça o WYM CRM, um sistema em operação, e outros exemplos de possibilidades para projetos web.</p>
                 <div class="portfolio-grid">
+                    <article class="portfolio-item portfolio-featured" aria-labelledby="wym-title">
+                        <div class="wym-project-visual">
+                            <img src="assets/images/wym-logo.png" alt="" width="88" height="88" loading="lazy">
+                            <span>WYM TECH</span>
+                            <small>CRM e atendimento por WhatsApp</small>
+                        </div>
+                        <div class="wym-project-content">
+                            <span class="project-label">Projeto real · Sistema web</span>
+                            <h3 id="wym-title">WYM CRM</h3>
+                            <p>Plataforma de gestão de atendimento e relacionamento com clientes, desenvolvida para empresas que precisam organizar o WhatsApp, acompanhar oportunidades e coordenar sua equipe em um único ambiente.</p>
+                            <ul class="project-features">
+                                <li>Atendimento por WhatsApp com histórico, responsáveis e envio de fotos, vídeos e documentos.</li>
+                                <li>CRM com setores e etapas personalizáveis, organização por arrastar e acompanhamento de clientes.</li>
+                                <li>Equipe com permissões por setor, carteira de clientes e controle de acessos por empresa.</li>
+                                <li>Respostas prontas, mensagens agendadas, menu inicial configurável e relatórios.</li>
+                            </ul>
+                            <p class="project-stack"><strong>Tecnologias:</strong> Next.js, React, TypeScript, Supabase, PostgreSQL, Evolution API e Vercel.</p>
+                            <a class="btn btn-primary" href="https://vendas.wymtech.com.br/" target="_blank" rel="noopener noreferrer">Conhecer o WYM CRM <span class="project-link-note">(abre em nova aba)</span></a>
+                        </div>
+                    </article>
+
                     <article class="portfolio-item">
                         <div class="portfolio-thumb" style="--thumb: linear-gradient(135deg, #1a3a4a 0%, #0d6278 100%);">
                             <span>Site institucional</span>
                         </div>
-                        <h3>Clínica Bem-Estar</h3>
+                        <h3>Clínica Bem-Estar <small>(exemplo)</small></h3>
                         <p>Páginas de serviços, equipe e agendamento via formulário.</p>
                     </article>
                     <article class="portfolio-item">
                         <div class="portfolio-thumb" style="--thumb: linear-gradient(135deg, #2d1f3d 0%, #5c3d7a 100%);">
                             <span>Landing + lead</span>
                         </div>
-                        <h3>Curso online X</h3>
+                        <h3>Curso online X <small>(exemplo)</small></h3>
                         <p>Uma página de conversão com vídeo e captura de e-mail.</p>
                     </article>
                     <article class="portfolio-item">
                         <div class="portfolio-thumb" style="--thumb: linear-gradient(135deg, #1a2d1a 0%, #3d6b3d 100%);">
                             <span>Vitrine</span>
                         </div>
-                        <h3>Oficina Verde</h3>
+                        <h3>Oficina Verde <small>(exemplo)</small></h3>
                         <p>Catálogo de serviços e depoimentos, foco em busca local.</p>
                     </article>
                 </div>

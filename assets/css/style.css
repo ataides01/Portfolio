@@ -435,6 +435,21 @@ body {
 }
 
 /* Contact */
+.portfolio-featured { grid-column: 1 / -1; }
+.wym-project-visual { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .75rem; padding: 2.5rem 1.5rem; background: linear-gradient(135deg, #07111e, #123853); color: #fff; text-align: center; }
+.wym-project-visual img { border-radius: 20px; }
+.wym-project-visual > span { font-size: 1.6rem; font-weight: 800; letter-spacing: .04em; color: #51d1f5; }
+.wym-project-visual small { font-size: .9rem; }
+.wym-project-content { padding: 1.75rem; min-width: 0; }
+.project-label { color: var(--text-muted); font-size: .8rem; font-weight: 600; }
+.portfolio-item .wym-project-content h3 { margin: .6rem 0 .8rem; font-size: 1.6rem; }
+.portfolio-item .wym-project-content p { margin: 0 0 1.2rem; line-height: 1.7; }
+.project-features { padding-left: 1.2rem; margin: 0 0 1.2rem; color: var(--text-muted); font-size: .9rem; }
+.project-features li { margin-bottom: .6rem; }
+.project-link-note { font-size: .7rem; font-weight: 400; }
+.portfolio-item h3 small { font-size: .7rem; font-weight: 400; color: var(--text-muted); }
+@media (min-width: 768px) { .portfolio-featured { display: grid; grid-template-columns: minmax(220px, 1fr) 2fr; } }
+
 .contact-layout {
     display: grid;
     gap: 2.5rem;
