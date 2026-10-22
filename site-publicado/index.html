@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Ataides Alves Cota Junior, estudante de Engenharia de Software, desenvolvedor web e instrutor de tecnologia."
+    />
+    <meta name="theme-color" content="#101820" />
+    <title>Ataides Alves Cota Junior | Portfólio</title>
+    <link rel="preload" href="assets/ataides-alves.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Voltar ao início">
+        <span class="brand__mark">AA</span>
+        <span>Ataides Alves</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema">
+          <span data-theme-label>Claro</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-label="Apresentação">
+        <div class="hero__content">
+          <p class="eyebrow">Engenharia de Software | Web | Educação tecnológica</p>
+          <h1>Ataides Alves Cota Junior</h1>
+          <p class="hero__lead">
+            Desenvolvedor em formação e instrutor de tecnologia, criando sistemas web funcionais
+            com HTML, CSS, JavaScript, Python, Django, React, TypeScript, Dart e Flutter.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projetos">Ver projetos</a>
+            <a class="button button--ghost" href="assets/ataides-alves-curriculo.pdf" target="_blank" rel="noreferrer">
+              Baixar currículo
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro band" id="sobre">
+        <div class="section-grid">
+          <div>
+            <p class="section-kicker">Quem sou eu</p>
+            <h2>Tecnologia, aprendizado prático e soluções digitais.</h2>
+          </div>
+          <div class="section-copy">
+            <p>
+              Sou Ataídes Alves Cota Junior, estudante de Engenharia de Software, apaixonado
+              por tecnologia, desenvolvimento de sistemas e soluções digitais. Tenho interesse
+              em programação, criação de aplicações web, automação, redes de computadores e
+              projetos que envolvem inovação e aprendizado prático.
+            </p>
+            <p>
+              Ao longo da minha trajetória acadêmica, venho desenvolvendo projetos utilizando
+              tecnologias como HTML, CSS, JavaScript, Python, Django, banco de dados e ferramentas
+              de versionamento como Git e GitHub. Também tenho experiência com projetos educacionais
+              envolvendo lógica de programação, Arduino, mBlock, robótica e desenvolvimento do
+              pensamento computacional.
+            </p>
+            <p>
+              Atualmente, também atuo como instrutor temporário para a FIRJAN SENAI, ministrando
+              cursos de Operador de Computador, com carga horária de 180h, e Desenvolvedor de
+              Aplicativos com Dart e Flutter, com carga horária de 200h.
+            </p>
+            <p>
+              Meu objetivo é evoluir constantemente como profissional da área de tecnologia,
+              criando sistemas úteis, organizados e funcionais. Neste portfólio, apresento alguns
+              dos meus trabalhos, projetos e estudos, demonstrando minha dedicação, criatividade
+              e compromisso com o aprendizado contínuo.
+            </p>
+          </div>
+        </div>
+
+        <div class="stats-grid" aria-label="Resumo profissional">
+          <article class="stat-card">
+            <span>2023-2027</span>
+            <strong>Engenharia de Software</strong>
+            <p>Formação em programação, requisitos, bancos de dados, testes e qualidade.</p>
+          </article>
+          <article class="stat-card">
+            <span>17</span>
+            <strong>Repositórios públicos</strong>
+            <p>Projetos em JavaScript, TypeScript, Python, PHP, CSS e HTML.</p>
+          </article>
+          <article class="stat-card">
+            <span>Atual</span>
+            <strong>Instrutor FIRJAN SENAI</strong>
+            <p>Cursos de Operador de Computador e Desenvolvimento de Apps com Dart e Flutter.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="band band--soft" id="projetos">
+        <div class="section-heading">
+          <p class="section-kicker">Projetos</p>
+          <h2>Sites e sistemas em destaque</h2>
+          <div class="filter-group" aria-label="Filtrar projetos">
+            <button class="filter is-active" type="button" data-filter="all">Todos</button>
+            <button class="filter" type="button" data-filter="web">Web</button>
+            <button class="filter" type="button" data-filter="game">Games</button>
+            <button class="filter" type="button" data-filter="python">Python</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card" data-category="web">
+            <div class="project-card__top">
+              <span class="project-tag">Next.js + React + Supabase</span>
+              <span class="project-status">Online</span>
+            </div>
+            <h3>WYM CRM</h3>
+            <p>Plataforma de atendimento por WhatsApp e gestão de relacionamento com clientes, com ambiente próprio por empresa. Reúne histórico de conversas, responsáveis, envio de fotos, vídeos e documentos, além de um CRM com setores e etapas personalizáveis.</p>
+            <p>Inclui gestão de equipe e permissões, carteira de clientes, respostas prontas, mensagens agendadas, menu inicial configurável e relatórios para acompanhar a operação.</p>
+            <div class="project-links">
+              <a href="https://vendas.wymtech.com.br/" target="_blank" rel="noopener noreferrer">Conhecer o WYM CRM</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <div class="project-card__top">
+              <span class="project-tag">Sistema web</span>
+              <span class="project-status">Online</span>
+            </div>
+            <h3>EasyVacc</h3>
+            <p>
+              Sistema web de vacinação com páginas para administração, pacientes, vacinas,
+              campanhas e relatórios.
+            </p>
+            <div class="project-links">
+              <a href="https://sistema-vacina.vercel.app/" target="_blank" rel="noreferrer">Acessar site</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <div class="project-card__top">
+              <span class="project-tag">React + Vite + Supabase</span>
+              <span class="project-status">Online</span>
+            </div>
+            <h3>Controle Financeiro Online</h3>
+            <p>
+              App para acompanhar salário, metas, cartão, contas mensais, parcelas e previsões
+              financeiras em uma interface responsiva.
+            </p>
+            <div class="project-links">
+              <a href="https://controle-financeiro-coral-rho.vercel.app" target="_blank" rel="noreferrer">Acessar site</a>
+              <a href="https://github.com/ataides01/Controle_Financeiro/tree/controle-financeiro-online" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="python">
+            <div class="project-card__top">
+              <span class="project-tag">Python</span>
+              <span class="project-status">GitHub</span>
+            </div>
+            <h3>Rastreio Fácil</h3>
+            <p>
+              Estudo de rastreamento de pacotes com Python, criado para praticar organização de
+              fluxo e lógica de aplicação.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/ataides01/RastreioFacil" target="_blank" rel="noreferrer">Ver repositório</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="game">
+            <div class="project-card__top">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-status">GitHub</span>
+            </div>
+            <h3>Snake</h3>
+            <p>
+              Jogo clássico desenvolvido em JavaScript para treinar lógica, colisão, pontuação e
+              atualização de estado no navegador.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/ataides01/Snake" target="_blank" rel="noreferrer">Ver repositório</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band" id="habilidades">
+        <div class="section-grid">
+          <div>
+            <p class="section-kicker">Habilidades</p>
+            <h2>Ferramentas que aparecem nos projetos e na formação.</h2>
+          </div>
+          <div class="skills-list" aria-label="Lista de habilidades">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Dart</span>
+            <span>Flutter</span>
+            <span>Python</span>
+            <span>Django</span>
+            <span>Angular básico</span>
+            <span>Git</span>
+            <span>SQL</span>
+            <span>Redes</span>
+            <span>Robótica educacional</span>
+            <span>Educação tecnológica</span>
+            <span>Relatórios técnicos</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--soft" id="experiencia">
+        <div class="section-heading">
+          <p class="section-kicker">Experiência</p>
+          <h2>Trajetória profissional</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span>2026 - atual</span>
+            <h3>Instrutor Temporário | FIRJAN SENAI</h3>
+            <p>
+              Ministração dos cursos de Operador de Computador (180h) e Desenvolvedor de
+              Aplicativos com Dart e Flutter (200h).
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span>06/2025 - atual</span>
+            <h3>Instrutor de Robótica | Prefeitura Municipal de Saquarema</h3>
+            <p>Aulas de robótica educacional para crianças, com atividades usando Lego e Arduino.</p>
+          </article>
+          <article class="timeline-item">
+            <span>07/2023 - 08/2024</span>
+            <h3>Instrutor de Robótica | Code Is Cool BR</h3>
+            <p>Ensino de robótica educacional, lógica e tecnologia para crianças.</p>
+          </article>
+          <article class="timeline-item">
+            <span>09/2022 - 09/2023</span>
+            <h3>Suporte Técnico | HIS Tecnologia e Sistemas</h3>
+            <p>Suporte ao sistema, orientação de uso e treinamento para usuários.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact band" id="contato">
+        <div class="contact__content">
+          <p class="section-kicker">Contato</p>
+          <h2>Vamos conversar sobre tecnologia, sistemas e projetos web.</h2>
+          <div class="contact-actions">
+            <a class="button button--primary" href="mailto:junior.cota.saqua@icloud.com">Enviar e-mail</a>
+            <a class="button button--secondary" href="https://www.linkedin.com/in/ataides-alves" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a class="button button--secondary" href="https://github.com/ataides01" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-panel" aria-label="Dados de contato">
+          <button type="button" data-copy="junior.cota.saqua@icloud.com">
+            <span>E-mail</span>
+            <strong>junior.cota.saqua@icloud.com</strong>
+          </button>
+          <button type="button" data-copy="+5522992167320">
+            <span>Telefone</span>
+            <strong>+55 22 99216-7320</strong>
+          </button>
+          <div>
+            <span>Localização</span>
+            <strong>Saquarema, RJ</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span data-year></span> Ataides Alves Cota Junior</span>
+      <a href="#inicio">Voltar ao topo</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="script.js"></script>
+  </body>
+</html>
